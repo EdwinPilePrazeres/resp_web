@@ -1,15 +1,47 @@
-import React from 'react';
-// import Video from '../../videos/video.mp4';
-import {HeroContainer, HeroBg, VideoBg} from './HeroElements';
+import React, {useState} from "react";
+import Video from "../../videos/video.mp4";
+import {Button} from '../ButtonElement';
+import {
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+  HeroBtnWrapper,
+  HeroH1,
+  HeroP,
+  ArrowForward,
+  ArrowRight
+} from "./HeroElements";
 
 const HeroSection = () => {
-    return (
-        <HeroContainer id='home'>
-            <HeroBg>
-                <VideoBg autoplay loop muted src={Video} type='video/mp4' />
-            </HeroBg>
-        </HeroContainer>
-    )
-}
 
-export default HeroSection
+    const [hover, setHover] = useState(false);
+
+    const onHover = () => {
+        setHover(!hover)
+    }
+  return (
+    <HeroContainer id="home">
+      <HeroBg>
+        {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
+        <VideoBg autoPlay preload loop muted type="video/mp4">
+          <source src={Video}></source>
+        </VideoBg>
+      </HeroBg>
+      <HeroContent>
+        <HeroH1>My Future Porfolio</HeroH1>
+        <HeroP>
+          Sign Up for a new account today and receive $250 in credit towards
+          your next payment
+        </HeroP>
+        <HeroBtnWrapper>
+          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+          </Button>
+        </HeroBtnWrapper>
+      </HeroContent>
+    </HeroContainer>
+  );
+};
+
+export default HeroSection;
