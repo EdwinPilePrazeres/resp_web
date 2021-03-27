@@ -29,7 +29,7 @@ const HeroSection = () => {
         </VideoBg>
       </HeroBg>
       <HeroContent>
-        <HeroH1>My Future Porfolio</HeroH1>
+        <HeroH1>Bank Page</HeroH1>
         <HeroP>
           Sign Up for a new account today and receive $250 in credit towards
           your next payment
