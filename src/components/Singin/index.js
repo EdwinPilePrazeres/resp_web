@@ -17,7 +17,7 @@ const Signin = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">EPP</Icon>
+          <Icon to="/resp_web">EPP</Icon>
           <FormContent>
             <Form action="#">
               <FormH1>Sign in to your account</FormH1>

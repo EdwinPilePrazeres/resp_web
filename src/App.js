@@ -21,8 +21,8 @@ function App() {
       {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       {/* <Navbar toggle={toggle} /> */}
       <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/signin" component={SinginPage} exact />
+        <Route path="/resp_web" component={Home} exact />
+        <Route path="/resp_web/signin" component={SinginPage} exact />
       </Switch>
       {/* <Footer /> */}
     </Router>

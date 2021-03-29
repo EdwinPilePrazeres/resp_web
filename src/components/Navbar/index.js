@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
         {/* <Nav scrollNav={scrollNav}> */}
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
+            <NavLogo to="/resp_web" onClick={toggleHome}>
               EPP
             </NavLogo>
             <MobileIcon onClick={toggle}>
@@ -97,7 +97,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/resp_web/signin">Sign In</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>
